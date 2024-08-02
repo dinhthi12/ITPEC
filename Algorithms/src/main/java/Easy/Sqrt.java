@@ -37,7 +37,6 @@ public class Sqrt {
                 right = mid - 1;
             }
         }
-
         return result;
     }
 }
