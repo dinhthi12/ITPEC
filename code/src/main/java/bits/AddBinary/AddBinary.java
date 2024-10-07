@@ -20,7 +20,7 @@ public class AddBinary {
 
     /**
      * Method to add two binary strings and return their sum as a binary string
-     * */
+     */
     public String addBinary(String a, String b) {
         /**
          * Initialize pointers for both strings starting from the last character (rightmost bit)
