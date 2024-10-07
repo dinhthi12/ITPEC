@@ -70,7 +70,7 @@ public class AddBinary {
 
         /**
          * Reverse the result string since we built it from right to left, and return it
-          */
+         */
         return stringBuilder.reverse().toString();
     }
 }
