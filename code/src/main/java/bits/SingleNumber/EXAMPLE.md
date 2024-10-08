@@ -1,9 +1,9 @@
 # Example
 
-### Initialize
+## Initialize
 - We start by initializing `result` to `0`.
 
-### Traverse the Array
+## Traverse the Array
 We now traverse each element in the array, XOR-ing it with the `result`.
 
 1. XOR `4` with `result` (which is currently `0`):
@@ -21,5 +21,5 @@ We now traverse each element in the array, XOR-ing it with the `result`.
 5. XOR `2` with `result` (which is now `6`):
     - `result = 6 ^ 2 = 4`
 
-### Return the Result
+## Result
 - After processing all elements in the array, the value of `result` is `4`. This is the number that appears only once in the array.
