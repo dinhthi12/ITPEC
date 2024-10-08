@@ -6,12 +6,12 @@ package bits.AddBinary;
  * Time and Space Complexity:
  * Time Complexity:
  *
- * The time complexity is O(max(m, n)), where m and n are the lengths of the binary strings a and b, respectively.
+ * O(max(m, n)) - Where m and n are the lengths of the binary strings a and b, respectively.
  * This is because we process both strings from right to left.
  *
  * Space Complexity:
  *
- * The space complexity is O(max(m, n)) due to the space needed to store the resulting binary string in the StringBuilder.
+ * O(max(m, n)) - Due to the space needed to store the resulting binary string in the StringBuilder.
  *
  * key word: Implicit Type Promotion
  */
@@ -20,6 +20,9 @@ public class AddBinary {
 
     /**
      * Method to add two binary strings and return their sum as a binary string
+     *
+     * @param {String} a & {String} b
+     * @return {String}
      */
     public String addBinary(String a, String b) {
         /**
