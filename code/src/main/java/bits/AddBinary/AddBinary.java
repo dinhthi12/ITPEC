@@ -21,7 +21,7 @@ public class AddBinary {
     /**
      * Method to add two binary strings and return their sum as a binary string
      *
-     * @param {String} a & {String} b
+     * @param {String a} & {String b}
      * @return {String}
      */
     public String addBinary(String a, String b) {

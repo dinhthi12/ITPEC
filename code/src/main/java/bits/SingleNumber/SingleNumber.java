@@ -24,7 +24,7 @@ public class SingleNumber {
      * @param {Integer[]} nums
      * @return {Integer}
      */
-    public static int singleNumber(int[] nums){
+    public int singleNumber(int[] nums){
         /**
          * Initialize result to 0 because XOR-ing with 0 leaves the number unchanged
          */
