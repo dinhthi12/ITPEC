@@ -20,8 +20,8 @@ public class ReverseBits {
      * This method takes a 32-bit integer `n` as input and returns the integer
      * that results from reversing the bits of `n`.
      *
-     * @param n
-     * @return
+     * @param {Integer} n
+     * @return {Integer}
      */
     public int reverseBits(int n) {
         /**
