@@ -14,8 +14,7 @@ public class PowerOfTwoTest {
     @Test
     void testPowerOfTwoOne() {
         int n = 1;
-        boolean expected = true;
-        assertEquals(expected, powerOfTwo.isPowerOfTwo(n));
+        assertEquals(true, powerOfTwo.isPowerOfTwo(n));
     }
 
     /**
@@ -25,8 +24,7 @@ public class PowerOfTwoTest {
     @Test
     void testPowerOfTwoSixteen() {
         int n = 16;
-        boolean expected = true;
-        assertEquals(expected, powerOfTwo.isPowerOfTwo(n));
+        assertEquals(true, powerOfTwo.isPowerOfTwo(n));
     }
 
     /**
@@ -36,8 +34,7 @@ public class PowerOfTwoTest {
     @Test
     void testNotPowerOfTwo() {
         int n = 3;
-        boolean expected = false;
-        assertEquals(expected, powerOfTwo.isPowerOfTwo(n));
+        assertEquals(false, powerOfTwo.isPowerOfTwo(n));
     }
 
     /**
@@ -47,8 +44,7 @@ public class PowerOfTwoTest {
     @Test
     void testZero() {
         int n = 0;
-        boolean expected = false;
-        assertEquals(expected, powerOfTwo.isPowerOfTwo(n));
+        assertEquals(false, powerOfTwo.isPowerOfTwo(n));
     }
 
     /**
@@ -58,7 +54,6 @@ public class PowerOfTwoTest {
     @Test
     void testNegativeNumber() {
         int n = -16;
-        boolean expected = false;
-        assertEquals(expected, powerOfTwo.isPowerOfTwo(n));
+        assertEquals(false, powerOfTwo.isPowerOfTwo(n));
     }
 }

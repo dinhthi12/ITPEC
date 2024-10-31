@@ -2,35 +2,48 @@ package common;
 
 public class TreeNode {
     /**
-     * The value stored in this node of the tree
+     * The value stored in the node. This represents the data contained in this particular tree node.
      */
     public int val;
 
     /**
-     * Pointers to the left and right children of this node
+     * The reference to the left child node in the binary tree.
+     * If there is no left child, this will be `null`.
      */
-    public TreeNode left;  // Points to the left child (null if no child)
-    public TreeNode right; // Points to the right child (null if no child)
+    public TreeNode left;
 
     /**
-     * Default constructor, initializes an empty node with no value or children
+     * The reference to the right child node in the binary tree.
+     * If there is no right child, this will be `null`.
      */
+    public TreeNode right;
 
+    /**
+     * Default constructor that creates an empty TreeNode.
+     * Both `left` and `right` child references are initialized to `null`, and `val` is uninitialized.
+     */
     public TreeNode() {}
 
     /**
-     * Constructor to initialize a node with a given value
+     * Constructor that creates a TreeNode with a specified value.
+     * The `left` and `right` child references are initialized to `null`.
+     *
+     * @param val The value to be stored in the node.
      */
     public TreeNode(int val) {
-        this.val = val; // Set the node's value to the passed integer
+        this.val = val;
     }
 
     /**
-     * Constructor to initialize a node with a given value and specific left and right children
+     * Constructor that creates a TreeNode with a specified value, left child, and right child.
+     *
+     * @param val The value to be stored in the node.
+     * @param left The reference to the left child node.
+     * @param right The reference to the right child node.
      */
     public TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;         // Set the node's value
-        this.left = left;       // Assign the left child node
-        this.right = right;     // Assign the right child node
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
