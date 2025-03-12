@@ -1,6 +1,5 @@
 <?php
 
-class findAbsolute {
 
   /**
   * Converts any negative numbers among the three inputs to their absolute values.
@@ -11,7 +10,6 @@ class findAbsolute {
   * @return array An array containing the absolute values of the input numbers.
  */
 
- public function convert(float $a, float $b, float $c): array {
+  function findAbsolute(float $a, float $b, float $c): array {
   return [abs($a), abs($b), abs($c)];
  }
-}
