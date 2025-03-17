@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once __DIR__ . '/../hasEvenNumber.php';
+require_once __DIR__ . '/../HasEvenNumber.php';
 
 class HasEvenNumberTest extends TestCase
 {

@@ -2,9 +2,9 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once __DIR__ . '/../findAbsolute.php';
+require_once __DIR__ . '/../FindAbsolute.php';
 
-class findAbsoluteTest extends TestCase {
+class FindAbsoluteTest extends TestCase {
   public function testFindAbsolute()
   {
 
