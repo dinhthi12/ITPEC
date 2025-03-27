@@ -28,11 +28,12 @@ switch ($uri) {
     break;
 
   // Handle requests related to a specific official by ID
-  case preg_match('/^\/api\/officials\/([a-f0-9\-]+)$/', $uri, $matches) ? true : false:
+  case preg_match('/^\/api\/officials\/([a-zA-Z0-9\-]+)$/', $uri, $matches) ? true : false:
     $officialId = $matches[1]; // Extract the official ID from the URL
 
     if ($method === 'GET') {
-      // Handle fetching details of a specific official (not yet implemented)
+      // Handle fetching details of a specific official
+      $officialController->searchOfficialId($officialId);
     } elseif ($method === 'PUT') {
       // Handle updating an official's information (not yet implemented)
     } elseif ($method === 'DELETE') {
