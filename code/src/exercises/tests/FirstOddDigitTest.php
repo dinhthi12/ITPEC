@@ -4,10 +4,10 @@ use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/../FirstOddDigit.php';
 
-
-class FirstOddDigitTest extends TestCase {
-
-    public function testFirstEvenDigit() {
+class FirstOddDigitTest extends TestCase
+{
+    public function testFirstEvenDigit()
+    {
         // Test case where first even digit is found
         $arr1 = [123, 456, 789, 321];
         $this->assertEquals(456, firstOddDigit($arr1));

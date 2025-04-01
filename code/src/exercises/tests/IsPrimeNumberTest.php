@@ -3,9 +3,9 @@
 use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/../IsPrimeNumber.php';
+
 class IsPrimeNumberTest extends TestCase
 {
-
     public function testPrimeNumbers()
     {
         $this->assertTrue(isPrimeNumber(2));

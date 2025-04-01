@@ -8,6 +8,7 @@
  * @param int $n The number to check.
  * @return bool Returns true if $n is prime, false otherwise.
  */
+
 function isPrimeNumber(int $n): bool
 {
   // Numbers less than or equal to 1 are not prime
