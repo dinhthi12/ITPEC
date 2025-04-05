@@ -1,0 +1,29 @@
+# Thư mục build của CMake
+/build/
+
+# Thư mục biên dịch của IDE
+/.vscode/
+
+# File tạm thời và log của IDE
+*.log
+*.tmp
+*.swp
+
+# Tệp biên dịch của C++ và các tệp nhị phân
+*.o
+*.out
+*.a
+*.so
+*.exe
+
+# Thư mục và tệp GoogleTest (nếu đã build từ source)
+lib/googletest/googletest/src/gtest_main.cc
+lib/googletest/googletest/src/gtest-all.cc
+
+# Thư mục cài đặt phụ thuộc (nếu dùng vcpkg hoặc tương tự)
+/vcpkg/
+
+# Các file khác có thể sinh ra trong môi trường phát triển như:
+*.user
+*.suo
+*.ds_store
