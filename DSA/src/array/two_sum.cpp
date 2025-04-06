@@ -1,11 +1,8 @@
-#include "array/two_sum.h"
 #include <unordered_map>
+#include "array/two_sum.h"
 
 /**
  * @brief Find two indices such that the numbers at those indices add up to the target.
- *
- * This function uses a hash map to efficiently find the complement of each number
- * in the array. It returns the first pair of indices where the sum equals the target.
  *
  * @param nums Vector of integers to search through.
  * @param target The target sum.
@@ -18,7 +15,7 @@ std::vector<int> twosum(const std::vector<int> &nums, int target)
 
     for (int i = 0; i < nums.size(); ++i)
     {
-        int complement = target - nums[i]; // What number do we need to reach target?
+        int complement = target - nums[i];
 
         // Check if complement already exists in map
         if (num_map.find(complement) != num_map.end())
