@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
-#include "bitManipulation/twosum.h"
+#include "array/two_sum.h"
 
-TEST(TwoSumTest, BasicTest)
+TEST(TwoSum, BasicTest)
 {
   std::vector<int> nums = {2, 7, 11, 15};
   int target = 9;
@@ -12,7 +12,7 @@ TEST(TwoSumTest, BasicTest)
   ASSERT_EQ(result[1], 1);
 }
 
-TEST(TwoSumTest, NoSolutionTest)
+TEST(TwoSum, NoSolutionTest)
 {
   std::vector<int> nums = {1, 2, 3, 4};
   int target = 8;
