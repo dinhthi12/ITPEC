@@ -24,7 +24,7 @@ set(EXERCISES_SRC
     src/exercises/list_divisors.cpp
     src/exercises/sumn.cpp
     src/exercises/sum_squares.cpp
-
+    src/exercises/sum_series.cpp
 )
 
 # Create lib
@@ -53,6 +53,8 @@ target_link_libraries(test_sumn gtest gtest_main dsa_lib)
 add_executable(test_sum_squares test/exercises/test_sum_squares.cpp)
 target_link_libraries(test_sum_squares gtest gtest_main dsa_lib)
 
+add_executable(test_sum_series test/exercises/test_sum_series.cpp)
+target_link_libraries(test_sum_series gtest gtest_main dsa_lib)
 
 
 # Enable testing and add tests
@@ -64,3 +66,4 @@ add_test(NAME test_two_sum COMMAND test_two_sum)
 add_test(NAME test_list_divisors COMMAND test_list_divisors)
 add_test(NAME test_sumn COMMAND test_sumn)
 add_test(NAME test_sum_squares COMMAND test_sum_squares)
+add_test(NAME test_sum_series COMMAND test_sum_series)
