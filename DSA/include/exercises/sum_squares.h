@@ -1,5 +1,5 @@
-#ifndef SUMSQUARES_H
-#define SUMSQUARES_H
+#ifndef SUM_SQUARES_H
+#define SUM_SQUARES_H
 
 int sumSquares(int n);
 

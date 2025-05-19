@@ -27,11 +27,16 @@ set(EXERCISES_SRC
     src/exercises/sum_series.cpp
 )
 
+set(MATRIX_SRC
+    src/matrix/analyze_matrix.cpp
+)
+
 # Create lib
 add_library(dsa_lib
     ${BIT_MANIPULATION_SRC}
     ${EXERCISES_SRC}
     ${ARRAY_SRC}
+    ${MATRIX_SRC}
 )
 
 # Add test
@@ -56,6 +61,9 @@ target_link_libraries(test_sum_squares gtest gtest_main dsa_lib)
 add_executable(test_sum_series test/exercises/test_sum_series.cpp)
 target_link_libraries(test_sum_series gtest gtest_main dsa_lib)
 
+# matrix
+add_executable(test_analyze_matrix test/matrix/test_analyze_matrix.cpp)
+target_link_libraries(test_analyze_matrix gtest gtest_main dsa_lib)
 
 # Enable testing and add tests
 enable_testing()
@@ -67,3 +75,4 @@ add_test(NAME test_list_divisors COMMAND test_list_divisors)
 add_test(NAME test_sumn COMMAND test_sumn)
 add_test(NAME test_sum_squares COMMAND test_sum_squares)
 add_test(NAME test_sum_series COMMAND test_sum_series)
+add_test(NAME test_analyze_matrix COMMAND test_analyze_matrix)
