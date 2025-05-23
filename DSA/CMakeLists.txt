@@ -31,12 +31,17 @@ set(MATRIX_SRC
     src/matrix/analyze_matrix.cpp
 )
 
+set(HASHTABLE_SRC
+    src/hashtable/roman_to_int.cpp
+)
+
 # Create lib
 add_library(dsa_lib
     ${BIT_MANIPULATION_SRC}
     ${EXERCISES_SRC}
     ${ARRAY_SRC}
     ${MATRIX_SRC}
+    ${HASHTABLE_SRC}
 )
 
 # Add test
@@ -65,6 +70,10 @@ target_link_libraries(test_sum_series gtest gtest_main dsa_lib)
 add_executable(test_analyze_matrix test/matrix/test_analyze_matrix.cpp)
 target_link_libraries(test_analyze_matrix gtest gtest_main dsa_lib)
 
+# hashtable
+add_executable(test_roman_to_int test/hashtable/test_roman_to_int.cpp)
+target_link_libraries(test_roman_to_int gtest gtest_main dsa_lib)
+
 # Enable testing and add tests
 enable_testing()
 
@@ -76,3 +85,4 @@ add_test(NAME test_sumn COMMAND test_sumn)
 add_test(NAME test_sum_squares COMMAND test_sum_squares)
 add_test(NAME test_sum_series COMMAND test_sum_series)
 add_test(NAME test_analyze_matrix COMMAND test_analyze_matrix)
+add_test(NAME test_roman_to_int COMMAND test_roman_to_int)
