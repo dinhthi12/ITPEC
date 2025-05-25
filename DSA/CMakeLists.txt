@@ -25,6 +25,7 @@ set(EXERCISES_SRC
     src/exercises/sumn.cpp
     src/exercises/sum_squares.cpp
     src/exercises/sum_series.cpp
+    src/exercises/palindrome_number.cpp
 )
 
 set(MATRIX_SRC
@@ -66,11 +67,14 @@ target_link_libraries(test_sum_squares gtest gtest_main dsa_lib)
 add_executable(test_sum_series test/exercises/test_sum_series.cpp)
 target_link_libraries(test_sum_series gtest gtest_main dsa_lib)
 
+add_executable(test_palindrome_number test/exercises/test_palindrome_number.cpp)
+target_link_libraries(test_palindrome_number gtest gtest_main dsa_lib)
+
 # matrix
 add_executable(test_analyze_matrix test/matrix/test_analyze_matrix.cpp)
 target_link_libraries(test_analyze_matrix gtest gtest_main dsa_lib)
 
-# hashtable
+# hash table
 add_executable(test_roman_to_int test/hashtable/test_roman_to_int.cpp)
 target_link_libraries(test_roman_to_int gtest gtest_main dsa_lib)
 
@@ -78,11 +82,21 @@ target_link_libraries(test_roman_to_int gtest gtest_main dsa_lib)
 enable_testing()
 
 # Register tests
+# bitManipulation
 add_test(NAME test_add_binary COMMAND test_add_binary)
+
+# array
 add_test(NAME test_two_sum COMMAND test_two_sum)
+
+# exercises
 add_test(NAME test_list_divisors COMMAND test_list_divisors)
 add_test(NAME test_sumn COMMAND test_sumn)
 add_test(NAME test_sum_squares COMMAND test_sum_squares)
 add_test(NAME test_sum_series COMMAND test_sum_series)
+add_test(NAME test_palindrome_number COMMAND test_palindrome_number)
+
+# matrix
 add_test(NAME test_analyze_matrix COMMAND test_analyze_matrix)
+
+# hash table
 add_test(NAME test_roman_to_int COMMAND test_roman_to_int)
